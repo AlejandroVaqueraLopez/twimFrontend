@@ -1,0 +1,24 @@
+main{
+    min-height:calc(100vh - 56px);
+}
+.indexMainRow{
+    height:calc(100vh - 56px);
+}
+.indexMainCol{
+    height:calc(100vh - 56px);
+    /*outline:solid green;*/
+    box-sizing:border-box;
+}
+.indexLogoText{
+    font-size:100px;
+    font-weight:bold;
+    color:#8371F3;
+    margin-bottom:20vh;
+}
+.indexButtonsContainer{
+    /*outline:solid green;*/
+}.indexButtonsContainer a{
+    text-decoration:none;
+    margin:0px 10px;
+}.indexButtonsContainer a .btn{
+}

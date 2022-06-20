@@ -1,0 +1,131 @@
+<!--
+<nav class="navbar navbar-default navbar-static-top navbar-inverse">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
+      </li>
+      <li>
+        <a href="https://devcenter.heroku.com/articles/how-heroku-works"><span class="glyphicon glyphicon-user"></span> How Heroku Works</a>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-info-sign"></span> Getting Started Guides <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-ruby">Getting Started on Heroku with Ruby</a></li>
+            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started on Heroku with Node.js</a></li>
+            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-php">Getting Started on Heroku with PHP</a></li>
+            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-python">Getting Started on Heroku with Python</a></li>
+            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-java">Getting Started on Heroku with Java</a></li>
+            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-go">Getting Started on Heroku with Go</a></li>
+            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-clojure">Getting Started on Heroku with Clojure</a></li>
+            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-scala">Getting Started on Heroku with Scala</a></li>
+            <li class="divider"></li>
+            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-heroku-and-connect-without-local-dev">Getting Started on Heroku with Heroku Connect</a></li>
+            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-jruby">Getting Started on Heroku with Ruby (Microsoft Windows)</a></li>
+          </ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="navbar-right">
+        <a href="https://devcenter.heroku.com"><span class="glyphicon glyphicon-book"></span> Heroku Dev Center</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+-->
+
+<!--
+  values for viewStatus
+  if "main", the user is in main page (dont show any option)
+  if "sign", the user is in signIn page or in signUp page (show only Home, signIn, signUp options)
+  if "logged", the user is logged, can view all options
+  else is error
+
+-->
+<% if (viewStatus === "main") { %>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand faviconText titleFont" href="/">Twim</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img class="menuIcon" src="../img/menu-icon.png" alt="">
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+      </div>
+    </div>
+  </nav>
+<% }else if(viewStatus === "sign"){ %>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand faviconText titleFont" href="/">Twim</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img class="menuIcon" src="../img/menu-icon.png" alt="">
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/signup">SignUp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="signin">SignIn</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+<% }else if(viewStatus === "logged"){%>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand faviconText titleFont" href="/">Twim</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img class="menuIcon" src="../img/menu-icon.png" alt="">
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/signup">SignUp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="signin">SignIn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/signup">SignUp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="signin">SignIn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/signup">SignUp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="signin">SignIn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/signup">SignUp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="signin">SignIn</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+<% }else{ %>
+    Error 
+<% }%>

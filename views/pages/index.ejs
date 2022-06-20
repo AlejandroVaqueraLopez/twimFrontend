@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+
+  <%- include ("../partials/header.ejs") %>
+  <%- include ("../partials/nav.ejs",{viewStatus:"main"}) %>
+
+  <main class="container container-fluid">
+    <div class="row indexMainRow">
+      <div class="col-12 indexMainCol d-flex flex-column justify-content-center align-items-center">
+
+        <h2 class="indexLogoText blackfontColorChange titleFont">Twim</h2>
+
+        <div class="indexButtonsContainer">
+          <a href="/signin">
+            <button  class="btn btn-light">Log in</button>
+          </a>
+          <a href="/signup">
+            <button class="btn btn-dark">Sign up</button>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
